@@ -8,4 +8,4 @@
 - merge the release branch back to `develop`: `git checkout develop; git merge --no-ff release/<major>.<minor>.<patch>`
 - push the `master`, `develop` branches and the tags back to enterprise git: `git push origin develop master --tags`
 - push the `master` branch to heroku (ask @brozp for credentials): `git push heroku master`
-- go to [releases](https://git.autodesk.com/brozp/forge-digital-twin/releases) and summarize changes in the newly deployed version
+- go to [releases](https://git.autodesk.com/autodesk-platform-services/aps-digital-twin/releases) and summarize changes in the newly deployed version

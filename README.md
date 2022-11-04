@@ -1,31 +1,31 @@
-# Forge Digital Twin Demo
+# APS Digital Twin Demo
 
 ![Platforms](https://img.shields.io/badge/platform-Windows|MacOS-lightgray.svg)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-[![Viewer](https://img.shields.io/badge/Viewer-v6-green.svg)](http://developer.autodesk.com/)
-[![Data-Management](https://img.shields.io/badge/Data%20Management-v1-green.svg)](http://autodesk-forge.github.io)
-[![OSS](https://img.shields.io/badge/OSS-v2-green.svg)](http://autodesk-forge.github.io)
-[![Model-Derivative](https://img.shields.io/badge/Model%20Derivative-v2-green.svg)](http://autodesk-forge.github.io)
+[![Viewer](https://img.shields.io/badge/Viewer-v6-green.svg)](http://aps.autodesk.com)
+[![Data-Management](https://img.shields.io/badge/Data%20Management-v1-green.svg)](https://aps.autodesk.com)
+[![OSS](https://img.shields.io/badge/OSS-v2-green.svg)](https://aps.autodesk.com)
+[![Model-Derivative](https://img.shields.io/badge/Model%20Derivative-v2-green.svg)](https://aps.autodesk.com)
 
 ![Intermediate](https://img.shields.io/badge/Level-Intermediate-blue.svg)
 
-Autodesk Forge application demonstrating various use cases in manufacturing, specifically in context of digital twins.
+[Autodesk Platform Services](https://aps.autodesk.com) application demonstrating various use cases in manufacturing, specifically in context of digital twins.
 
-![Screenshot](thumbnail.png)
+![Screenshot](screenshot.png)
 
 ## Live demo
 
-Master branch is deployed to http://forge-digital-twin.autodesk.io.
+Master branch is deployed to https://aps-digital-twin.autodesk.io.
 
 ## Development
 
 ### Prerequisites
 
 - Node.js v10+
-- [Forge](https://forge.autodesk.com) application credentials,
-  and an _urn_ of a model processed with [Model Derivative APIs](https://forge.autodesk.com/en/docs/model-derivative/v2)
+- [APS credentials](https://forge.autodesk.com/en/docs/oauth/v2/tutorials/create-app),
+  and a _URN_ of a model processed with [Model Derivative APIs](https://forge.autodesk.com/en/docs/model-derivative/v2)
 - MongoDB database
   - for example, use the free tier of [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
   - or run it locally: https://docs.mongodb.com/manual/installation
@@ -37,9 +37,9 @@ Master branch is deployed to http://forge-digital-twin.autodesk.io.
 - run server with all the required env. variables
   - for example, on macOS:
     ```bash
-    export FORGE_CLIENT_ID=<client-id>
-    export FORGE_CLIENT_SECRET=<client-secret>
-    export FORGE_MODEL_URN=<model-urn>
+    export APS_CLIENT_ID=<client-id>
+    export APS_CLIENT_SECRET=<client-secret>
+    export APS_MODEL_URN=<model-urn>
     export MONGODB_URL=<mongodb-connection-string>
     npm start
     ```
@@ -51,9 +51,9 @@ Master branch is deployed to http://forge-digital-twin.autodesk.io.
             "name": "Launch Express Server",
             "program": "${workspaceFolder}/server.js",
             "env": {
-                "FORGE_CLIENT_ID": "<client-id>",
-                "FORGE_CLIENT_SECRET": "<client-secret>",
-                "FORGE_MODEL_URN": "<model-urn>",
+                "APS_CLIENT_ID": "<client-id>",
+                "APS_CLIENT_SECRET": "<client-secret>",
+                "APS_MODEL_URN": "<model-urn>",
                 "MONGODB_URL": "<mongodb-connection-string>"
             }
         }
@@ -88,4 +88,4 @@ Please refer to [LICENSE](LICENSE) for more details.
 
 ## Written by
 
-Petr Broz ([@ipetrbroz](https://twitter.com/ipetrbroz)), Varun Patil, Forge Partner Development Group
+Petr Broz ([@ipetrbroz](https://twitter.com/ipetrbroz)), Varun Patil, APS Developer Advocates

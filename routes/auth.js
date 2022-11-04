@@ -1,8 +1,8 @@
 const express = require('express');
-const { AuthenticationClient } = require('autodesk-forge-tools');
+const { AuthenticationClient } = require('forge-server-utils');
 
 let router = express.Router();
-let auth = new AuthenticationClient(process.env.FORGE_CLIENT_ID, process.env.FORGE_CLIENT_SECRET);
+let auth = new AuthenticationClient(process.env.APS_CLIENT_ID, process.env.APS_CLIENT_SECRET);
 
 router.get('/token', async function(req, res, next) {
     try {
