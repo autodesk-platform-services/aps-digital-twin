@@ -1,4 +1,4 @@
-# APS Digital Twin Demo
+# Digital Twin Demo
 
 ![Platforms](https://img.shields.io/badge/platform-Windows|MacOS-lightgray.svg)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen.svg)
@@ -13,7 +13,7 @@
 
 [Autodesk Platform Services](https://aps.autodesk.com) application demonstrating various use cases in manufacturing, specifically in context of digital twins.
 
-![Screenshot](screenshot.png)
+![Screenshot](thumbnail.png)
 
 ## Live demo
 
