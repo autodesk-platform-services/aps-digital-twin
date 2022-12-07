@@ -13,7 +13,7 @@
 
 [Autodesk Platform Services](https://aps.autodesk.com) application demonstrating various use cases in manufacturing, specifically in context of digital twins.
 
-![Screenshot](thumbnail.png)
+![thumbnail](thumbnail.png)
 
 ## Live demo
 
