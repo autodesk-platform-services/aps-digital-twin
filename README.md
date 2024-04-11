@@ -1,12 +1,11 @@
 # Digital Twin Demo
 
-![Platforms](https://img.shields.io/badge/platform-Windows|MacOS-lightgray.svg)
-![Node.js](https://img.shields.io/badge/node-%3E%3D%2010.0.0-brightgreen.svg)
+![Platforms](https://img.shields.io/badge/platform-windows|macOS|linux-lightgray.svg)
+![Node.js](https://img.shields.io/badge/node-%3E%3D%2016.0.0-brightgreen.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-[![Viewer](https://img.shields.io/badge/Viewer-v6-green.svg)](http://aps.autodesk.com)
-[![Data-Management](https://img.shields.io/badge/Data%20Management-v1-green.svg)](https://aps.autodesk.com)
-[![OSS](https://img.shields.io/badge/OSS-v2-green.svg)](https://aps.autodesk.com)
+[![Viewer](https://img.shields.io/badge/Viewer-v7-green.svg)](http://aps.autodesk.com)
+[![Data-Management](https://img.shields.io/badge/Data%20Management-v2-green.svg)](https://aps.autodesk.com)
 [![Model-Derivative](https://img.shields.io/badge/Model%20Derivative-v2-green.svg)](https://aps.autodesk.com)
 
 ![Intermediate](https://img.shields.io/badge/Level-Intermediate-blue.svg)
