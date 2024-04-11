@@ -13,8 +13,9 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@aps_sdk/authentication": "^0.1.0-beta.1",
+    "@aps_sdk/autodesk-sdkmanager": "^0.0.7-beta.1",
     "express": "^4.16.4",
-    "forge-server-utils": "^9.0.0",
     "helmet": "^3.16.0",
     "mongodb": "^6.5.0",
     "mongoose": "^5.4.20",

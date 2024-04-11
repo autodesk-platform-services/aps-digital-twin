@@ -1,13 +1,16 @@
 const express = require('express');
-const { AuthenticationClient } = require('forge-server-utils');
+const { SdkManagerBuilder } = require('@aps_sdk/autodesk-sdkmanager');
+const { AuthenticationClient, Scopes } = require('@aps_sdk/authentication');
+
+const sdkManager = SdkManagerBuilder.create().build();
+const authenticationClient = new AuthenticationClient(sdkManager);
 
 let router = express.Router();
-let auth = new AuthenticationClient(process.env.APS_CLIENT_ID, process.env.APS_CLIENT_SECRET);
 
 router.get('/token', async function(req, res, next) {
     try {
-        const result = await auth.authenticate(['viewables:read']);
-        res.json({ access_token: result });
+        const credentials = await authenticationClient.getTwoLeggedToken(process.env.APS_CLIENT_ID, process.env.APS_CLIENT_SECRET, [Scopes.ViewablesRead]);
+        res.json(credentials);
     } catch(err) {
         next(err);
     }

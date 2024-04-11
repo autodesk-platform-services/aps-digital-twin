@@ -3,10 +3,7 @@ const options = {
 	getAccessToken: function(callback) {
 		fetch('/api/auth/token')
 		    .then((response) => response.json())
-		    .then((json) => {
-                const auth = json.access_token;
-                callback(auth.access_token, auth.expires_in);
-            });
+		    .then(({ access_token, expires_in }) => callback(access_token, expires_in));
 	}
 };
 
