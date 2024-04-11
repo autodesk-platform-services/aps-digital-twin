@@ -1,6 +1,7 @@
 .vscode/
 node_modules/
 data/
+backup/
 database.sqlite
 *.log
 .DS_Store
